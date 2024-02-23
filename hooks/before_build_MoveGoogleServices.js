@@ -69,7 +69,7 @@ function copyGoogleServicesFile() {
 };
 
 //function to check if google services files already exist and dispose of them
-function cleanGoogleServicesFile() {
+function cleanGoogleServicesFile(context) {
   var targetDir = getGoogleServiceTargetDir(context);
 
   // Check if files exist and delete them if found
@@ -85,5 +85,5 @@ function cleanGoogleServicesFile() {
   });
 }
 
-cleanGoogleServicesFile();
+cleanGoogleServicesFile(context);
 copyGoogleServicesFile();
