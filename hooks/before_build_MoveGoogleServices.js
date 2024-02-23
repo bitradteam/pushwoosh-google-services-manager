@@ -35,7 +35,7 @@ function copyGoogleServicesFile(appId) {
  * Deletes existing Google Services files if found.
  */
 function cleanGoogleServicesFiles() {
-  const targetDir = 'source/platforms/android/app/';
+  const targetDir = 'platforms/android/app/';
   const existingFiles = ["google-services.json", "GoogleService-Info.plist"];
   existingFiles.forEach(file => {
     const filePath = path.join(targetDir, file);
